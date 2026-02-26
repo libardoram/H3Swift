@@ -1,5 +1,9 @@
 # H3Swift
 
+[![Swift](https://img.shields.io/swiftVersions/5.10)](https://swift.org)
+[![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-blue)](https://swift.org)
+[![SPM](https://img.shields.io/badge/swift%20package%20manager-swiftpm-blue)](https://swift.org/package-manager/)
+
 A Swift package providing an idiomatic Swift API for [Uber's H3](https://h3geo.org/) hexagonal geospatial indexing system.
 
 H3 divides the Earth's surface into a hierarchical grid of hexagonal cells, each identified by a 64-bit integer. This library wraps the underlying C library (via [Ch3](https://github.com/bdotdub/Ch3)) and exposes a clean, type-safe Swift interface.
