@@ -187,6 +187,45 @@ let polygonWithHole = H3GeoPolygon(exterior: exterior, holes: [hole])
 let cellsWithHole = polygonWithHole.fill(resolution: 9)
 ```
 
+## Examples
+
+The repository includes two example scripts demonstrating package functionality:
+
+### Running Examples
+
+```bash
+# Run basic example
+swift Examples/BasicExample.swift
+
+# Run advanced example
+swift Examples/AdvancedExample.swift
+```
+
+### Basic Example (`Examples/BasicExample.swift`)
+
+Demonstrates core functionality:
+- Convert coordinates to H3 indexes
+- Get cell center and boundary
+- Traverse neighbors (k-ring)
+- Navigate hierarchy (parent/children)
+- Check cell properties (pentagon, base cell, resolution class)
+- Query resolution statistics
+- Get pentagons and resolution-0 cells
+
+### Advanced Example (`Examples/AdvancedExample.swift`)
+
+Demonstrates advanced functionality:
+- Grid distance between locations
+- Grid line between cells
+- Neighbor detection
+- Cell edges (create and query)
+- Polyfill (polygon to H3 cells)
+- Polyfill with holes
+- Compact/uncompact cells
+- kRingDistances
+- HexRing
+- Icosahedron faces
+
 ## API Reference
 
 ### `H3Coordinate`

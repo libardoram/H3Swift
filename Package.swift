@@ -15,6 +15,14 @@ let package = Package(
             name: "H3",
             targets: ["H3"]
         ),
+        .executable(
+            name: "basic-example",
+            targets: ["BasicExample"]
+        ),
+        .executable(
+            name: "advanced-example",
+            targets: ["AdvancedExample"]
+        ),
     ],
     targets: [
         // Vendored uber/h3 v4.4.1 C library
@@ -53,6 +61,18 @@ let package = Package(
         .target(
             name: "H3",
             dependencies: ["Ch3"]
+        ),
+        .executableTarget(
+            name: "BasicExample",
+            dependencies: ["H3"],
+            path: "Examples",
+            sources: ["BasicExample.swift"]
+        ),
+        .executableTarget(
+            name: "AdvancedExample",
+            dependencies: ["H3"],
+            path: "Examples",
+            sources: ["AdvancedExample.swift"]
         ),
         .testTarget(
             name: "H3Tests",

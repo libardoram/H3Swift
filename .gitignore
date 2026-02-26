@@ -23,5 +23,8 @@ DerivedData/
 *.o
 *.d
 
+# VSCode
+.vscode/
+
 # Credentials
 .netrc
