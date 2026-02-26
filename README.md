@@ -1,6 +1,6 @@
 # H3Swift
 
-[![Swift](https://img.shields.io/swiftVersions/5.10)](https://swift.org)
+[![Swift](https://img.shields.io/badge/swift-5.10-blue)](https://swift.org)
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-blue)](https://swift.org)
 [![SPM](https://img.shields.io/badge/swift%20package%20manager-swiftpm-blue)](https://swift.org/package-manager/)
 
